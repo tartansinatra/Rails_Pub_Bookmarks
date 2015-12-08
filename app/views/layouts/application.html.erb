@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PubBookmarks</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+    <link href='https://fonts.googleapis.com/css?family=Lobster|Rubik:400,400italic,500|Rancho' rel='stylesheet' type='text/css'>
+    <link href="/assets/stylesheets/application.css" rel="stylesheet">
+  </head>
+    <nav>
+      <ul>
+        <a href="/welcome">Home</a>
+        <a href="/new">New</a>
+        <a href="/list">List</a>
+        <a href="/show">Show</a>
+      </ul>
+
+    </nav>
+
+    <div id="wrapper">
+        <img id="frankenstein" src="http://media-cdn.tripadvisor.com/media/photo-s/05/a4/50/12/frankenstein-pub-edinburgh.jpg" />
+        <img id='malones' src="https://www.euansguide.com/ImageGen.ashx?image=/media/2384562/back-hall.jpeg&width=1024&height=576&crop=resize"
+    </div>
+
+    <body>
+
+    <%= yield %>
+
+  </body>
+</html>

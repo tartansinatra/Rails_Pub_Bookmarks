@@ -1,0 +1,4 @@
+<% @bookmarks.each do |bookmark| %>
+  <h5>Name: <%= bookmark.name %></h5>
+    <%= link_to 'Show', bookmark_path(bookmark.id) %>
+  <% end %>

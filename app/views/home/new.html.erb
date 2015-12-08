@@ -1,0 +1,23 @@
+
+
+<%= form_for @bookmark do |b| %>
+  <%= b.label :name %>
+  <%= b.text_field :name %>
+  <br>
+  <br>
+  <%= b.label :url %>
+  <%= b.text_field :url %>
+  <br>
+  <br>
+  <%= b.label :genre %>
+  <%= b.text_field :genre, "<option>Cocktail</option><option>Food-Led</option><option>Sports</option>".html_safe %>
+  <br>
+  <br>
+  <%= b.label :imageurl %>
+  <%= b.text_field :imageurl %>
+  <br>
+  <br>
+  <%= b.submit "create bookmark" %>
+
+
+<% end %>
