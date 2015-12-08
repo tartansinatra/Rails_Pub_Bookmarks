@@ -1,7 +1,7 @@
 class HomeController <ApplicationController
 
   def welcome
-    @bookmarks = Bookmark.all
+    render 'new'
   end
 
   def show
@@ -10,10 +10,6 @@ class HomeController <ApplicationController
     rescue
     @error = "Sorry, none available."
     end
-  end
-
-  def new
-    @bookmark = Bookmark.new
   end
 
   def create
